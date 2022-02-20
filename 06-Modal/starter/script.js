@@ -27,8 +27,6 @@ const closeModal = function () {
 
 /* ----- EVENT-LISTENER SECTION ----- */
 
-// Remember to not call the function right away
-
 
 // When you have only one line of code in the for loop you don't need curly braces
 // Now we select multiple objects with the same class-name
@@ -36,6 +34,7 @@ const closeModal = function () {
 for (let i = 0; i < btnsOpenModal.length; i++)
     btnsOpenModal[i].addEventListener('click', openModal);
 
+// Remember to not call the function right away
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
