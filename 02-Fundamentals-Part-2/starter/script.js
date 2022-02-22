@@ -95,7 +95,7 @@ console.log(types); */
 
 
 // Looping backwards trough an array
-  const jonas = [
+/*   const jonas = [
   'Jonas',
   'Schmedtmann',
   2037 - 1991,
@@ -107,14 +107,33 @@ console.log(types); */
 for (let i = jonas.length - 1; i >= 0; i-- ){
     console.log(i, jonas[i]);
 }
-
+ */
 // Nested loop
 
-for (let exercise = 1; exercise <= 4; exercise++){
+/* for (let exercise = 1; exercise <= 4; exercise++){
     console.log(`-------- STARTING EXCERCISE ${exercise}`);
 
-    for (let rep = 1; rep < 6; rep++){
+    for (let rep = 1; rep < 11; rep++){
         console.log(`Exercise ${exercise}: Lifting weigth repetition ${rep}🏋`);
     }
 
-};
+}; */
+
+/* let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE: Lifting weigth repetition ${rep}🏋`);
+    rep++;
+}
+ */
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+   // console.log(`You rolled a ${dice}`);
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if ( dice === 6 ) console.log('Loop is about to end...');
+}
+
+// The best way to loop trough an array is the for loop
+
+
