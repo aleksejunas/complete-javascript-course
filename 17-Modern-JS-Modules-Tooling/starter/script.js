@@ -25,7 +25,7 @@ import * as ShoppingCart from './shoppingCart.js';
 // addToCart('apples', 4, 'red');
 // console.log(cart);
 
-/* 
+/*
     Top Level Await
 */
 /* // const res = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -76,3 +76,20 @@ console.log(lastPost2);
 ShoppingCart2.addToCart('apple', 4);
 ShoppingCart2.addToCart('pizza', 2);
 console.log(ShoppingCart2); */
+
+/*
+  CommonJS Modules
+*/
+
+// Export (just node.js, not browser)
+export.addToCart = function(product, quantity) {
+  cart.push(product, quantity);
+  console.log(`${quantity} ${product} added to cart (shipping cost is ${shippingCost})`);
+};
+
+// Import
+// const { addToCart } = require('./shoppingCart.js');
+
+/*
+  NODE.js
+*/
